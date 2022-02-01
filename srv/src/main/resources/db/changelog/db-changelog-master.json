@@ -1,0 +1,47 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "initialize-tables",
+        "author": "author",
+        "changes": [
+          {
+            "createTable": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "OPSYS",
+                    "type": "nvarchar(3)",
+                    "constraints": {
+                      "nullable": false,
+                      "primaryKey": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "EBELN",
+                    "type": "integer",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "controller",
+                    "type": "nvarchar(25)",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                }
+              ],
+              "tableName": "POAccrualDataDTO"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
